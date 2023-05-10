@@ -1,0 +1,31 @@
+@use "colors";
+@use "fonts";
+
+
+.menu {
+    background-color: colors.$c-menu;
+    height: 70px;
+    position: relative;
+    &__list {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    &__item {
+      padding-top: 25px;
+      padding-bottom: 15px;
+      font-size: 20px;
+    }
+    &__link {
+      text-decoration: none;
+      color: colors.$c-background;
+      padding: 20px;
+      border-radius: 10px;
+      &:hover {
+        background-color: colors.$c-button;
+      }
+    }
+  }

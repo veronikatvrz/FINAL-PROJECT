@@ -1,0 +1,16 @@
+@use "colors";
+@use "fonts";
+@use "basics";
+
+.footer {
+    background-color: colors.$c-menu;
+    color: colors.$c-background;
+    margin: 0;
+  
+    &__contact {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      line-height: 2;
+    }
+  }
