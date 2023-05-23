@@ -7,67 +7,48 @@
     <title>Swinging Carrots</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Asap+Condensed:wght@400;500;600&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Asap+Condensed:wght@400;500;600&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"/>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400;500;600&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400;500;600&family=Special+Elite&display=swap" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="/css/main.css" />
   </head>
 
   <body>
-    <div class="wrapper">
-      <header class="header">
-        <nav class="menu">
-          <ul class="menu__list">
-            <li class="menu__item">
-              <a href="/" class="menu__link">Domů</a>
-            </li>
-            <li class="menu__item">
-              <a href="/cowork" class="menu__link">Coworking</a>
-            </li>
-            <li class="menu__item">
-              <a href="/regular" class="menu__link">Kroužky</a>
-            </li>
-            <li class="menu__item">
-              <a href="/events" class="menu__link">Akce</a>
-            </li>
-            <li class="menu__item">
-              <a href="/about" class="menu__link">O nás</a>
-            </li>
-            <li class="menu__item">
-              <a href="/contact" class="menu__link">Kontakt</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="header__left">
-          <!--<div class="header__image">
-                <img class="header__logo" src="images/logo.jpg" alt="Logo">
-            </div>-->
-          <div class="header__title"></div>
+    
+    <header class="header">
+      <div class="header__title">
+        <h1 class="header__text">Swinging Carrots</h1>
+      </div>
+      <div class="header__menu">
+        {% include "partials/hamburger-menu.njk" %}
+      </div>
+    </header>
+   
+    <main>
+      {{ content | safe }}
+    </main>
+  
+    <!--FOOTER section-->
+    <footer class="footer">
+      <div class="footer__contact">
+        <div class="footer__left">
+          <p>
+            Swinging Carrots<br />
+            Nad kašnou 34, Brno - Bystrc<br />
+          </p>
         </div>
-      </header>
-      <main>
-        {{ content | safe }}
-      </main>
-
-      <!--FOOTER section-->
-      <footer class="footer">
-        <div class="footer__contact">
-          <div class="footer__left">
-            <p>
-              Swinging Carrots<br />
-              Nad kašnou 34, Brno - Bystrc<br />
-            </p>
-          </div>
-          <div class="footer__right">
-            <p>
-              +420 123 456 789<br />
-              swinging@carrots.cz<br />
-              Facebook
-            </p>
-          </div>
+        <div class="footer__right">
+          <p>
+            +420 123 456 789<br />
+            swinging@carrots.cz<br />
+            Facebook
+          </p>
         </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
   </body>
 </html>

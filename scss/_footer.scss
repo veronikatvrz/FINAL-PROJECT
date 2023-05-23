@@ -1,6 +1,6 @@
-@use "colors";
-@use "fonts";
-@use "basics";
+@use "layout/colors";
+@use "layout/fonts";
+@use "layout/basics";
 
 .footer {
     background-color: colors.$c-menu;

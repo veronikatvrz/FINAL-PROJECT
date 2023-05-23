@@ -3,111 +3,176 @@ layout: general-template.njk
 ---
 
 <!--HERO section-->
-<section class="hero">
-  <div class="hero__box">
-    <p class="hero__title">SWINGING CARROTS</p>
-    <p class="hero__description">
-      Kreativní rodinné<br />
-      centrum
-    </p>
-  </div>
-</section>
+<section class="hero hero--home"></section>
 
-<!--COWORKING section-->
-<section class="cowork">
-  <div class="cowork__left">
-    <h1 class="cowork__heading">Coworking</h1>
-    <p class="cowork__text">
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur unde
-      autem necessitatibus minus, laborum corporis facilis dolorum, fugit, nihil
-      aliquid culpa ad repudiandae ratione reiciendis optio eligendi iusto
-      asperiores pariatur.
-    </p>
-    <button class="cowork__button">
-      <a href="cowork.html" class="cowork__link">Mám zájem</a>
+<div class="wrapper wrapper--home">
+  <section class="home-intro">
+    <div class="home-intro__text">
+      <p>
+        Vítejte v našem kreativním rodinném centru - místě, kde se srdce rodiny
+        setkává s nekonečnými možnostmi.
+      </p>
+    </div>
+  </section>
+
+  <!--COWORKING section-->
+  <section class="home-cowork">
+    <div class="image-container image-container--home-cowork">
+      <img
+        class="image image--home-cowork"
+        src="images/cowomen.jpg"
+        alt="Coworking"
+      />
+    </div>
+    <div class="heading heading--home-cowork">
+      <h1>Coworking</h1>
+    </div>
+    <div class="text text--home-cowork">
+      <p>
+        Nabízíme unikátní spojení coworkingového prostoru a herničky s hlídáním
+        dětí v rodinném prostředí našeho centra. Na rozdíl od většiny
+        coworkingových center jsou u nás děti vítané a jsme rádi, že si k nám
+        přijdou pohrát, zatímco vy můžete pracovat, něco si zařídit, nebo si jen
+        odpočinout a užít si čas pro sebe.
+      </p>
+    </div>
+    <button class="button button--home-cowork">
+      <a href="/cowork" class="button__link">Mám zájem</a>
     </button>
-  </div>
-  <div class="cowork__right">
-    <img class="cowork__image" src="images/cowomen.jpg" alt="Coworking" />
-  </div>
-</section>
+  </section>
 
-<!--ACTIVITIES section-->
-<section class="activities">
-  <h1 class="activities__heading">Naše aktivity</h1>
-  <div class="activities__container">
-    <div class="activities__item">
-      <h2 class="activities__subheading">Kroužky</h2>
-      <p class="activities__text">
+  <!--ACTIVITIES section-->
+  <section class="home-activities">
+    <div class="home-activities__item--regular">
+      <div class="image-container image-container--home-activities">
+        <img
+          class="image image--home-activities"
+          src="images/boy-cooking.jpg"
+          alt="Creativity"
+        />
+      </div>
+      <h1 class="home-activities__heading">Kroužky</h1>
+      <p class="home-activities__text">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
         laboriosam sint voluptate ipsam inventore ab dolore dignissimos,
         temporibus maiores excepturi assumenda omnis voluptas consequatur alias
         quod delectus tempora natus quo?
       </p>
-      <button class="activities__button">
-        <a class="activities__link" href="regular.html">Mám zájem</a>
+    </div>
+    <div class="home-activities__button--regular">
+      <button class="button">
+        <a class="button__link" href="/regular">Mám zájem</a>
       </button>
     </div>
-    <div class="activities__item">
-      <h2 class="activities__subheading">Workshopy</h2>
-      <p class="activities__text">
+
+    <div class="home-activities__item--workshops">
+      <div class="image-container image-container--home-activities">
+        <img
+          class="image image--home-activities"
+          src="images/workshops.jpg"
+          alt="Creativity"
+        />
+      </div>
+      <h1 class="home-activities__heading">Workshopy</h1>
+      <p class="home-activities__text">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
         laboriosam incidunt temporibus numquam eius facilis reiciendis,
         excepturi assumenda tempore ipsa est ducimus, cum optio vel. Hic vel
         voluptatem consequatur iste.
       </p>
-      <button class="activities__button">
-        <a class="activities__link" href="workshops.html">Mám zájem</a>
+    </div>
+    <div class="home-activities__button--workshops">
+      <button class="button button--">
+        <a class="button__link" href="/events">Mám zájem</a>
       </button>
     </div>
-    <div class="activities__item">
-      <h2 class="activities__subheading">JEDNORÁZOVÉ AKCE</h2>
-      <p class="activities__text">
+
+    <div class="home-activities__item--events">
+      <div class="image-container image-container--home-activities">
+        <img
+          class="image image--home-activities"
+          src="images/creativity.jpg"
+          alt="Creativity"
+        />
+      </div>
+      <h1 class="home-activities__heading">Jednorázové akce</h1>
+      <p class="home-activities__text">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti id
         corrupti vero non tempore fugiat aliquam ad, quidem dolore facilis
         facere enim quas optio quis iusto quae ipsam a ex.
       </p>
-      <button class="activities__button">
-        <a class="activities__link" href="events.html">Mám zájem</a>
+    </div>
+    <div class="home-activities__button--events">
+      <button class="button">
+        <a class="button__link" href="/events">Mám zájem</a>
       </button>
     </div>
-  </div>
-</section>
+  </section>
 
-<!--ABOUT section-->
-<section class="about">
-  <h1 class="about__heading">Jak to u nás vypadá</h1>
-  <p class="about__text">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eveniet harum
-    aut pariatur! Inventore optio totam expedita, quae eum iusto ducimus ipsum.
-    Officiis nesciunt quasi perspiciatis voluptate ad inventore facilis.
-  </p>
-  <div class="about__gallery">
-    <img class="about__image" src="images/creativity.jpg" />
-    <img class="about__image" src="images/cowork.jpg" />
-    <img class="about__image" src="images/boy-cooking.jpg" />
-    <img class="about__image" src="images/play-horizontal.jpg" />
-    <img class="about__image" src="images/play.jpg" />
-    <img class="about__image" src="images/yum.jpg" />
-  </div>
-</section>
+  <!--REFERENCES section-->
 
-<!--REFERENCES section-->
-
-<section class="references">
-  <h1 class="references__heading">Řekli o nás</h1>
-  <div class="references__container">
-    <p class="references__text">
-      <em
-        >"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-        exercitationem quo vel voluptas doloribus eaque sit ut laudantium
-        reiciendis aliquid neque rerum placeat iure dolor incidunt ad quisquam,
-        magnam reprehenderit."</em
+  <section class="home-references">
+    <h1 class="heading heading--home-references">Řekli o nás</h1>
+    <div class="home-references__reference">
+      <p class="text text--home-references">
+        <em
+          >"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+          exercitationem quo vel voluptas doloribus eaque sit ut laudantium
+          reiciendis aliquid neque rerum placeat iure dolor incidunt ad
+          quisquam, magnam reprehenderit."</em
+        >
+      </p>
+      <div
+        class="image-portrait-container image-portrait-container--home-references"
       >
-    </p>
-    <img class="references__image" src="images/misa.jpg" />
-    <p class="references__author">
-      <b>Míša Sudická</b><br />maminka a podnikatelka
-    </p>
-  </div>
-</section>
+        <img
+          class="image-portrait image-portrait--home-references"
+          src="images/misa.jpg"
+          alt="Autorka reference"
+        />
+      </div>
+      <p class="home-references__author">
+        <b>Míša Sudická</b><br />maminka a podnikatelka
+      </p>
+    </div>
+  </section>
+
+  <!--ABOUT section-->
+  <section class="home-about">
+    <div class="home-about__about">
+      <h1 class="home-about__heading">Jak to u nás vypadá</h1>
+      <p class="home-about__text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eveniet
+        harum aut pariatur! Inventore optio totam expedita, quae eum iusto
+        ducimus ipsum. Officiis nesciunt quasi perspiciatis voluptate ad
+        inventore facilis.
+      </p>
+    </div>
+    <div class="gallery gallery--home-about">
+      <img
+        class="gallery__image gallery__image--home-about"
+        src="images/inside.jpg"
+      />
+      <img
+        class="gallery__image gallery__image--home-about"
+        src="images/cowork.jpg"
+      />
+      <img
+        class="gallery__image gallery__image--home-about"
+        src="images/painting.jpg"
+      />
+      <img
+        class="gallery__image gallery__image--home-about"
+        src="images/play-horizontal.jpg"
+      />
+      <img
+        class="gallery__image gallery__image--home-about"
+        src="images/play.jpg"
+      />
+      <img
+        class="gallery__image gallery__image--home-about"
+        src="images/yum.jpg"
+      />
+    </div>
+  </section>
+</div>

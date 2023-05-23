@@ -1,0 +1,44 @@
+@use "../layout/basics";
+@use "../layout/colors";
+@use "../layout/fonts";
+@use "../layout/images";
+
+.contact-us {
+  &__box {
+    background-color: colors.$c-text;
+    color: colors.$c-background;
+    padding: 2em;
+    border-radius: 10px;
+    margin: 2em;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 1em;
+  }
+
+  &__intro {
+    grid-column: 1 / span 2;
+    grid-row: 1 / 2;
+  }
+
+  &__phone {
+    grid-row: 2/ 3;
+  }
+
+  &__mail {
+    grid-row: 3 / 4;
+  }
+
+  &__messenger {
+    grid-row: 4 / 5;
+  }
+
+&__icon {
+  grid-column: 1 / 2;
+}
+
+&__icon-text {
+  grid-column: 2 / 3;
+  text-align: left;
+}
+}

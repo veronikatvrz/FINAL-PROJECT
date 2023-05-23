@@ -1,0 +1,24 @@
+@use "../layout/basics";
+@use "../layout/colors";
+@use "../layout/fonts";
+@use "../layout/images";
+
+
+.wrapper--cowork {
+grid-template-rows: [intro] auto [icons] auto [reservation] auto [about] auto [references] auto;
+margin: 2em;
+}
+
+.cowork {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 100%;
+  
+  grid-gap: 1em;
+  margin: 1em;
+
+  &__subheading {
+    font-size: 24px;
+    color: colors.$c-button;
+  }
+}

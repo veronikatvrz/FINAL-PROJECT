@@ -1,0 +1,88 @@
+@use "colors";
+@use "fonts";
+
+body {
+    margin: 0;
+    font-family: fonts.$f-default;
+    color: colors.$c-text;
+    background-color: colors.$c-background;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+.wrapper {
+  margin: 1em;
+}
+
+h1, h2, h3 {
+    font-family: fonts.$f-heading;
+}
+
+h1 {
+    color: colors.$c-button;
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-align: center;
+    margin-top: 1em;
+}
+
+h2 {
+    color: colors.$c-text;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+h3 {
+  color: colors.$c-text;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+
+
+.button {
+    border-radius: 30px; 
+    padding: 10px;
+    border: none;
+    background-color: colors.$c-menu;
+    color: white;
+    margin-top: 1em;
+   
+    &__link {
+        font-family: fonts.$f-heading;
+        text-decoration: none;
+        padding: 1em;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: colors.$c-background;
+      }
+
+    &:hover {
+      background-color: colors.$c-button;
+    }
+}
+
+
+/*.container {
+    display: flex;
+    justify-content: space-between;
+  
+    &__item {
+      flex-basis: 30%;
+      text-align: center;
+      margin: 20px;
+      padding: 20px;
+      border: 2px solid colors.$c-menu;
+      border-radius: 10px;
+    }
+  }*/
+
+
+  
