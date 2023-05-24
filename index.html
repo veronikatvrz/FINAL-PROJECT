@@ -6,13 +6,11 @@ layout: general-template.njk
 <section class="hero hero--home"></section>
 
 <div class="wrapper wrapper--home">
-  <section class="home-intro">
-    <div class="home-intro__text">
-      <p>
-        Vítejte v našem kreativním rodinném centru - místě, kde se srdce rodiny
-        setkává s nekonečnými možnostmi.
-      </p>
-    </div>
+  <section class="intro">
+    <p class="home-intro">
+      Vítejte v našem kreativním rodinném centru - místě, kde se srdce rodiny
+      setkává s nekonečnými možnostmi.
+    </p>
   </section>
 
   <!--COWORKING section-->
@@ -24,10 +22,8 @@ layout: general-template.njk
         alt="Coworking"
       />
     </div>
-    <div class="heading heading--home-cowork">
-      <h1>Coworking</h1>
-    </div>
-    <div class="text text--home-cowork">
+    <div class="home-cowork__text">
+      <h1 class="home-cowork__heading">Coworking</h1>
       <p>
         Nabízíme unikátní spojení coworkingového prostoru a herničky s hlídáním
         dětí v rodinném prostředí našeho centra. Na rozdíl od většiny
@@ -35,86 +31,80 @@ layout: general-template.njk
         přijdou pohrát, zatímco vy můžete pracovat, něco si zařídit, nebo si jen
         odpočinout a užít si čas pro sebe.
       </p>
-    </div>
-    <button class="button button--home-cowork">
+   
+    <button class="button home-cowork__button">
       <a href="/cowork" class="button__link">Mám zájem</a>
     </button>
+  </div>
   </section>
 
   <!--ACTIVITIES section-->
   <section class="home-activities">
-    <div class="home-activities__item--regular">
-      <div class="image-container image-container--home-activities">
+    <div class="home-activities__item">
+      <div class="image-container home-activities__image-container">
         <img
-          class="image image--home-activities"
+          class="image image--regular"
           src="images/boy-cooking.jpg"
           alt="Creativity"
         />
       </div>
-      <h1 class="home-activities__heading">Kroužky</h1>
-      <p class="home-activities__text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
-        laboriosam sint voluptate ipsam inventore ab dolore dignissimos,
-        temporibus maiores excepturi assumenda omnis voluptas consequatur alias
-        quod delectus tempora natus quo?
-      </p>
-    </div>
-    <div class="home-activities__button--regular">
-      <button class="button">
-        <a class="button__link" href="/regular">Mám zájem</a>
-      </button>
+      <div class="home-activities__text">
+        <h1 class="home-activities__heading">Kroužky</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
+          laboriosam sint voluptate ipsam inventore ab dolore dignissimos,
+          temporibus maiores excepturi assumenda omnis voluptas consequatur
+          alias quod delectus tempora natus quo?
+        </p>
+        <button class="button home-activities__button">
+          <a class="button__link" href="/regular">Mám zájem</a>
+        </button>
+      </div>
     </div>
 
-    <div class="home-activities__item--workshops">
-      <div class="image-container image-container--home-activities">
-        <img
-          class="image image--home-activities"
-          src="images/workshops.jpg"
-          alt="Creativity"
-        />
+    <div class="home-activities__item">
+      <div class="image-container home-activities__image-container">
+        <img class="image" src="images/workshops.jpg" alt="Creativity" />
       </div>
-      <h1 class="home-activities__heading">Workshopy</h1>
-      <p class="home-activities__text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-        laboriosam incidunt temporibus numquam eius facilis reiciendis,
-        excepturi assumenda tempore ipsa est ducimus, cum optio vel. Hic vel
-        voluptatem consequatur iste.
-      </p>
-    </div>
-    <div class="home-activities__button--workshops">
-      <button class="button button--">
-        <a class="button__link" href="/events">Mám zájem</a>
-      </button>
+      <div class="home-activities__text">
+        <h1 class="home-activities__heading">Workshopy</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+          laboriosam incidunt temporibus numquam eius facilis reiciendis,
+          excepturi assumenda tempore ipsa est ducimus, cum optio vel. Hic vel
+          voluptatem consequatur iste.
+        </p>
+        <button class="button home-activities__button">
+          <a class="button__link" href="/events">Mám zájem</a>
+        </button>
+      </div>
     </div>
 
-    <div class="home-activities__item--events">
-      <div class="image-container image-container--home-activities">
-        <img
-          class="image image--home-activities"
-          src="images/creativity.jpg"
-          alt="Creativity"
-        />
+    <div class="home-activities__item">
+      <div class="image-container home-activities__image-container">
+        <img class="image" src="images/creativity.jpg" alt="Creativity" />
       </div>
-      <h1 class="home-activities__heading">Jednorázové akce</h1>
-      <p class="home-activities__text">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti id
-        corrupti vero non tempore fugiat aliquam ad, quidem dolore facilis
-        facere enim quas optio quis iusto quae ipsam a ex.
-      </p>
-    </div>
-    <div class="home-activities__button--events">
-      <button class="button">
-        <a class="button__link" href="/events">Mám zájem</a>
-      </button>
+      <div class="home-activities__text">
+        <h1 class="home-activities__heading">Akce</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+          laboriosam incidunt temporibus numquam eius facilis reiciendis,
+          excepturi assumenda tempore ipsa est ducimus, cum optio vel. Hic vel
+          voluptatem consequatur iste.
+        </p>
+        <button class="button home-activities__button">
+          <a class="button__link" href="/events">Mám zájem</a>
+        </button>
+      </div>
     </div>
   </section>
 
   <!--REFERENCES section-->
 
   <section class="home-references">
-    <h1 class="heading heading--home-references">Řekli o nás</h1>
+    <h1 class="home-references__heading">Řekli o nás</h1>
     <div class="home-references__reference">
-      <p class="text text--home-references">
+      <p class="home-references__text">
         <em
           >"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
           exercitationem quo vel voluptas doloribus eaque sit ut laudantium
@@ -122,17 +112,15 @@ layout: general-template.njk
           quisquam, magnam reprehenderit."</em
         >
       </p>
-      <div
-        class="image-portrait-container image-portrait-container--home-references"
-      >
+      <div class="image-portrait-container home-references__image-container">  
         <img
-          class="image-portrait image-portrait--home-references"
+          class="image-portrait home-references__image"
           src="images/misa.jpg"
           alt="Autorka reference"
         />
       </div>
       <p class="home-references__author">
-        <b>Míša Sudická</b><br />maminka a podnikatelka
+        <b>Míša Sudická</b><br>maminka a podnikatelka
       </p>
     </div>
   </section>
@@ -148,30 +136,30 @@ layout: general-template.njk
         inventore facilis.
       </p>
     </div>
-    <div class="gallery gallery--home-about">
+    <div class="gallery home-about__gallery">
       <img
-        class="gallery__image gallery__image--home-about"
+        class="gallery__image home-about__image"
         src="images/inside.jpg"
       />
       <img
-        class="gallery__image gallery__image--home-about"
+        class="gallery__image home-about__image"
         src="images/cowork.jpg"
       />
       <img
-        class="gallery__image gallery__image--home-about"
-        src="images/painting.jpg"
+        class="gallery__image home-about__image"
+        src="images/circle.jpg"
       />
       <img
-        class="gallery__image gallery__image--home-about"
-        src="images/play-horizontal.jpg"
+        class="gallery__image home-about__image"
+        src="images/yum.jpg"
       />
       <img
-        class="gallery__image gallery__image--home-about"
+        class="gallery__image home-about__image"
         src="images/play.jpg"
       />
       <img
-        class="gallery__image gallery__image--home-about"
-        src="images/yum.jpg"
+        class="gallery__image home-about__image"
+        src="images/painting.jpg"
       />
     </div>
   </section>

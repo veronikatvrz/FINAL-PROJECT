@@ -1,122 +1,100 @@
-@use "../layout/colors";
-@use "../layout/fonts";
-@use "../layout/basics";
-@use "../layout/images";
+@use "../base/fonts";
+@use "../base/basics";
+@use "../base/colors";
 
 .wrapper--home {
   display: grid;
   place-items: center;
   grid-template-columns: 100%;
   grid-template-rows: [intro] auto [cowork] auto [activities] auto [references] auto [about] auto;
-  grid-gap: 1em;
-  margin: 1em;
 }
 
 .home-intro {
   grid-row: intro / intro;
-  &__text {
-    text-align: center;
-    font-size: 16px;
-    padding: 0.5em;
-    font-weight: 600;
-  }
 }
 
 .home-cowork {
   grid-row: cowork;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: [cowork-image] auto [cowork-about] auto [cowork-button] auto;
-  place-items: center;
-  margin: 1em 2em;
+  grid-template-rows: [cowork-image] auto [cowork-about] auto;
+  margin: 2em;
 
-  @media screen and (min-width: 650px) {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 25% 50% 25%;
-    .image-container--home-cowork {
-      grid-column: 1/2;
-      grid-row: 1 / span 3;
-    }
-    .heading--home-cowork {
-      grid-column: 2/3;
-      grid-row: 1/2;
-    }
-    .text--home-cowork {
-      grid-column: 2/3;
-      grid-row: 2/3;
-    }
-    .button--home-cowork {
-      grid-column: 2/3;
-      grid-row: 3/4;
-    }
+  @media screen and (min-width: 700px) {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    column-gap: 1.5em;
   }
 
-  /*
   &__image-container {
     grid-row: cowork-image;
+    @media screen and (min-width: 700px) {
+      grid-column: 1/2;
+      grid-row: 1/1;
+    }
   }
 
-  &__about {
+  &__text{
     grid-row: cowork-about;
+    @media screen and (min-width: 700px) {
+      grid-column: 2/3;
+      grid-row: 1/1;
   }
-
-  &__button {
-    grid-row: cowork-button;
-  }
- 
-  
-  @media screen and (min-width: 650px) {
-    font-size: 48px;
-  }
-
-  @media screen and (min-width: 1000px) {
-    font-size: 52 px;
-  }*/
+}
 }
 
 .home-activities {
   grid-row: activities;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: [activities-image] auto [activities-heading] auto [activities-regular] auto [regular-button] auto [activities-workshops] auto [workshops-button] auto [activities-events] auto [events-button] auto;
-  place-items: center;
-  margin: 1em 2em;
+  grid-template-rows: 1fr 1fr 1fr;
+
+  @media screen and (min-width: 1100px) {
+    grid-template-columns: [regular] 1fr [workshops] 1fr [events] 1fr;
+    grid-template-rows: [a-image] 50% [a-text] 50%;
+  }
+
+  &__item {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: [a-image] auto [a-text] auto;
+    @media screen and (min-width: 700px) {
+      grid-template-columns: [a-left] 1fr [a-right] 1fr;
+      grid-template-rows: 100%;
+      margin: 2em;
+    }
+    @media screen and (min-width: 1100px) {
+      grid-template-columns: 100%;
+      grid-template-rows: [a-image] auto [a-text] auto;
+    }
+    }
 
   &__image-container {
-    grid-row: activities-image;
+    grid-row: a-image;
+    @media screen and (min-width: 700px) {
+      grid-column: a-left;
+      grid-row: 1/1;
+    }
+    @media screen and (min-width: 1100px) {
+      grid-column: auto;
+      grid-row: a-image;
+    }
   }
 
-  &__heading {
-    grid-row: activities-heading;
-    margin-top: 0;
+  &__text {
+    grid-row: a-text;
+    @media screen and (min-width: 700px) {
+      grid-column: a-right;
+      grid-row: 1/1;
+    }
+    @media screen and (min-width: 1100px) {
+      grid-column: auto;
+      grid-row: a-text;
+    }
+  }
   }
 
-  &__item--regular {
-    grid-row: activities-regular;
-  }
 
-  &__button--regular {
-    grid-row: regular-button;
-    margin-bottom: 4em;
-    margin-top: 0;
-  }
-  &__item--workshops {
-    grid-row: activities-workshops;
-  }
-
-  &__button--workshops {
-    grid-row: workshops-button;
-    margin-bottom: 4em;
-  }
-
-  &__item--events {
-    grid-row: activities-events;
-  }
-
-  &__button--events {
-    grid-row: events-button;
-  }
-}
 
 .home-references {
   grid-row: references;
@@ -124,7 +102,10 @@
   grid-template-columns: 100%;
   grid-template-rows: [ref-heading] auto [ref-reference] auto;
   place-items: center;
-  margin: 1em 2em;
+
+  @media screen and (min-width: 700px) {
+    max-width: 60%;
+  }
 
   &__heading {
     grid-row: ref-heading;
@@ -137,6 +118,9 @@
     grid-template-rows: [r-text] auto [r-image] auto [r-author] auto;
     place-items: center;
     margin: 0 3em;
+    border: 2px dotted colors.$c-icons;
+    border-radius: 10px;
+    padding: 1em;
   }
 
   &__text {
@@ -149,8 +133,9 @@
 
   &__author {
     grid-row: r-author;
-
   }
+
+
 }
 
 .home-about {
@@ -158,8 +143,7 @@
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: [about-about] auto [about-gallery] auto;
-  place-items: center;
-  margin: 1em 2em;
+  margin: 1em 4em;
 
   &__about {
     grid-row: about-about;
@@ -167,6 +151,17 @@
 
   &__gallery {
     grid-row: gallery;
+    display: grid;
+    @media screen and (min-width: 700px) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-auto-flow: column;
+    }
+    @media screen and (min-width: 1000px) {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+
   }
 }
 

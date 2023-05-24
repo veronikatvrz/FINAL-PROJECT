@@ -1,0 +1,9 @@
+@use "../base/basics";
+@use "../base/colors";
+@use "../base/fonts";
+
+.intro {
+    text-align: center;
+    padding: 0.5em;
+    font-weight: 600;
+}

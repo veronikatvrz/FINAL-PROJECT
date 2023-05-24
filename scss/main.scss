@@ -1,17 +1,25 @@
-@use "layout/colors";
-@use "layout/fonts";
-@use "layout/basics";
-@use "layout/images";
-@use "layout/icons";
-@use "header";
-@use "menu";
-@use "hero";
+@use "base/colors";
+@use "base/fonts";
+@use "base/basics";
+
+@use "layout/grid";
+@use "layout/header";
+@use "layout/hero";
+@use "layout/footer";
+@use "layout/menu";
+
+
+@use "components/images";
+@use "components/icons";
+@use "components/buttons";
+@use "components/intro";
+
+
 @use "pages/homepage";
 @use "pages/cowork";
 @use "pages/regular";
 @use "pages/events";
 @use "pages/contact";
-@use "footer";
 
 
 

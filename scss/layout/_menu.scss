@@ -1,6 +1,6 @@
-@use "layout/colors";
-@use "layout/fonts";
-@use "layout/basics";
+@use "../base/colors";
+@use "../base/fonts";
+@use "../base/basics";
 
 .menu {
   height: 80%;
@@ -12,7 +12,7 @@
     list-style: none;
     background-color: colors.$c-menu;
     display: none;
-    @media screen and (min-width: 650px) {
+    @media screen and (min-width: 700px) {
       display: flex !important;
       justify-content: center;
       padding: 0;
@@ -34,7 +34,7 @@
   &__item {
     font-size: 12px;
     border-bottom: 1px solid colors.$c-background;
-    @media screen and (min-width: 650px) {
+    @media screen and (min-width: 700px) {
       border: none;
       font-size: 16px;
     }
@@ -51,7 +51,7 @@
     &:hover {
       background-color: colors.$c-button;
     }
-    @media screen and (min-width: 650px) {
+    @media screen and (min-width: 700px) {
       padding: 20px;
       &:hover {
         border-radius: 10px;
@@ -67,7 +67,7 @@
     /*border: 1px solid colors.$c-background;
     border-radius: 5px;*/
     padding: 5px 5px 0 5px;
-    @media screen and (min-width: 650px) {
+    @media screen and (min-width: 700px) {
       display: none;
     }
   }

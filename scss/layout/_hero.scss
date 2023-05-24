@@ -1,6 +1,6 @@
-@use "layout/colors";
-@use "layout/fonts";
-@use "layout/basics";
+@use "../base/colors";
+@use "../base/fonts";
+@use "../base/basics";
 
 .hero {
   width: 100%;
