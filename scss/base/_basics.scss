@@ -18,9 +18,7 @@ body {
     }
   }
 
-.wrapper {
-  margin: 1em;
-}
+
 
 h1, h2, h3 {
     font-family: fonts.$f-heading;
@@ -59,28 +57,7 @@ h3 {
 
 
 
-.button {
-    border-radius: 30px; 
-    padding: 10px;
-    border: none;
-    background-color: colors.$c-menu;
-    color: white;
-    margin-top: 1em;
-   
-    &__link {
-        font-family: fonts.$f-heading;
-        text-decoration: none;
-        padding: 1em;
-        font-size: 20px;
-        font-weight: 700;
-        letter-spacing: 2px;
-        color: colors.$c-background;
-      }
 
-    &:hover {
-      background-color: colors.$c-button;
-    }
-}
 
 
 /*.container {
