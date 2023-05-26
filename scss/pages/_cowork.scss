@@ -2,25 +2,24 @@
 @use "../base/colors";
 @use "../base/fonts";
 
-
 .wrapper--cowork {
-grid-template-rows: [intro] auto [icons] auto [reservation] auto [about] auto [references] auto;
-margin: 2em;
+  grid-template-rows: [intro] auto [icons] auto [reservation] auto [about] auto [references] auto;
+  margin: 2em;
 }
 
 .cowork {
   &__grid {
-display: grid;
-  place-items: center;
-  grid-template-columns: 100%;
-  
-  grid-gap: 1em;
-  margin: 1em;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 100%;
 
-  @media screen and (min-width: 750px) {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-  }
+    grid-gap: 1em;
+    margin: 1em;
+
+    @media screen and (min-width: 750px) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+    }
   }
 
   &__text {

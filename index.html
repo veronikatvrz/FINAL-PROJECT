@@ -3,15 +3,17 @@ layout: general-template.njk
 ---
 
 <!--HERO section-->
-<section class="hero hero--home"></section>
+<section class="hero hero--home">
+  <div class="home-hero__box">
+    <p class="home-hero__text">
+      Kreativní<br />
+      rodinné<br />
+      centrum
+    </p>
+  </div>
+</section>
 
 <div class="wrapper wrapper--home">
-  <section class="intro">
-    <p class="intro--home">
-      Vítáme vás v kreativním rodinné centru Swinging Carrots!
-    </p>
-  </section>
-
   <!--COWORKING section-->
   <section class="home-cowork">
     <div class="image-container image-container--home-cowork">
@@ -30,11 +32,11 @@ layout: general-template.njk
         přijdou pohrát, zatímco vy můžete pracovat, něco si zařídit, nebo si jen
         odpočinout a užít si čas pro sebe.
       </p>
-   
-    <button class="button home-cowork__button">
-      <a href="/cowork" class="button__link">Mám zájem</a>
-    </button>
-  </div>
+
+      <button class="button home-cowork__button">
+        <a href="/cowork" class="button__link">Mám zájem</a>
+      </button>
+    </div>
   </section>
 
   <!--ACTIVITIES section-->
@@ -111,7 +113,7 @@ layout: general-template.njk
           quisquam, magnam reprehenderit."</em
         >
       </p>
-      <div class="image-portrait-container home-references__image-container">  
+      <div class="image-portrait-container home-references__image-container">
         <img
           class="image-portrait home-references__image"
           src="images/misa.jpg"
@@ -119,7 +121,7 @@ layout: general-template.njk
         />
       </div>
       <p class="home-references__author">
-        <b>Míša Sudická</b><br>maminka a podnikatelka
+        <b>Míša Sudická</b><br />maminka a podnikatelka
       </p>
     </div>
   </section>
@@ -136,30 +138,12 @@ layout: general-template.njk
       </p>
     </div>
     <div class="gallery home-about__gallery">
-      <img
-        class="gallery__image home-about__image"
-        src="images/inside.jpg"
-      />
-      <img
-        class="gallery__image home-about__image"
-        src="images/cowork.jpg"
-      />
-      <img
-        class="gallery__image home-about__image"
-        src="images/circle.jpg"
-      />
-      <img
-        class="gallery__image home-about__image"
-        src="images/yum.jpg"
-      />
-      <img
-        class="gallery__image home-about__image"
-        src="images/play.jpg"
-      />
-      <img
-        class="gallery__image home-about__image"
-        src="images/painting.jpg"
-      />
+      <img class="gallery__image home-about__image" src="images/inside.jpg" />
+      <img class="gallery__image home-about__image" src="images/cowork.jpg" />
+      <img class="gallery__image home-about__image" src="images/circle.jpg" />
+      <img class="gallery__image home-about__image" src="images/yum.jpg" />
+      <img class="gallery__image home-about__image" src="images/play.jpg" />
+      <img class="gallery__image home-about__image" src="images/painting.jpg" />
     </div>
   </section>
 </div>

@@ -2,43 +2,42 @@
 @use "../base/fonts";
 @use "../base/basics";
 
-.regular{
-    display: grid;
-    place-items: center;
-    grid-template-columns: 100%;
-    grid-template-rows: [intro] auto [english] auto [yoga] auto;
-    grid-gap: 1em;
-    margin: 1em;
+.regular {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 100%;
+  grid-template-rows: [intro] auto [english] auto [yoga] auto;
+  grid-gap: 1em;
+  margin: 1em;
 
+  @media screen and (min-width: 650px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: [intro] auto [offer] auto;
+  }
+
+  &__intro {
+    grid-row: intro;
     @media screen and (min-width: 650px) {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: [intro] auto [offer] auto;
+      grid-column: 1/3;
+      align-self: center;
+      grid-row: 1/1;
     }
+  }
+  &__english {
+    grid-row: english;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: [eng-image] auto [eng-about] auto [eng-button] auto;
+    place-items: center;
+    margin: 1em 2em;
+  }
 
-    &__intro {
-        grid-row: intro;
-        @media screen and (min-width: 650px) {
-            grid-column: 1/3;
-            align-self: center;
-            grid-row: 1/1;
-        }
-    }
-    &__english {
-        grid-row: english;
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: [eng-image] auto [eng-about] auto [eng-button] auto;
-        place-items: center;
-        margin: 1em 2em;
-    }
-
-    &__yoga {
-        grid-row: yoga;
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: [eng-image] auto [eng-about] auto [eng-button] auto;
-        place-items: center;
-        margin: 1em 2em;
-    }
+  &__yoga {
+    grid-row: yoga;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: [eng-image] auto [eng-about] auto [eng-button] auto;
+    place-items: center;
+    margin: 1em 2em;
+  }
 }
-

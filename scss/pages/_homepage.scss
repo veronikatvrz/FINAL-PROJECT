@@ -9,6 +9,36 @@
   grid-template-rows: [intro] auto [cowork] auto [activities] auto [references] auto [about] auto;
 }
 
+.home-hero {
+  &__text {
+    font-size: 16px;
+    font-weight: 700;
+    color: colors.$c-button;
+    padding: 2em;
+    display: inline-block;
+    background-color: colors.$c-background;
+    border-radius: 65% 75% 70% 60%;
+    margin-top: 2em;
+    margin-left: 1em;
+    margin-right: 17em;
+
+    @media screen and (min-width: 650px) {
+      font-size: 20px;
+      margin-right: 20em;
+    }
+
+    @media screen and (min-width: 800px) {
+      font-size: 24px;
+    }
+    @media screen and (min-width: 1000px) {
+      font-size: 28px;
+      margin-top: 3em;
+      margin-left: 1em;
+      margin-right: 25em;
+      padding: 2.5em;
+    }
+  }
+}
 .home-intro {
   grid-row: intro / intro;
 }
@@ -34,13 +64,13 @@
     }
   }
 
-  &__text{
+  &__text {
     grid-row: cowork-about;
     @media screen and (min-width: 700px) {
       grid-column: 2/3;
       grid-row: 1/1;
+    }
   }
-}
 }
 
 .home-activities {
@@ -67,7 +97,7 @@
       grid-template-columns: 100%;
       grid-template-rows: [a-image] auto [a-text] auto;
     }
-    }
+  }
 
   &__image-container {
     grid-row: a-image;
@@ -92,9 +122,7 @@
       grid-row: a-text;
     }
   }
-  }
-
-
+}
 
 .home-references {
   grid-row: references;
@@ -134,8 +162,6 @@
   &__author {
     grid-row: r-author;
   }
-
-
 }
 
 .home-about {
@@ -161,7 +187,5 @@
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr;
     }
-
   }
 }
-
