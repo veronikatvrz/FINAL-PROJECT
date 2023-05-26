@@ -1,6 +1,7 @@
+/*$f-default: "Special Elite", cursive;*/
 body {
   margin: 0;
-  font-family: "Special Elite", cursive;
+  font-family: "Courier Prime", serif;
   color: #1e2749;
   background-color: #fffff2;
   font-size: 14px;
@@ -169,7 +170,7 @@ h3 {
   background-size: cover;
 }
 .hero--events {
-  background: url("../images/rainy.jpg");
+  background: url("../images/playroom.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -753,20 +754,20 @@ h3 {
      object-fit: cover;
 }
 .event__h1, .event__h2, .event__h3 {
-  font-family: "Special Elite", cursive;
+  font-family: "Courier Prime", serif;
   margin: 0;
   text-align: left;
 }
 .event__h1 {
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 0.5em;
 }
 .event__h2 {
-  font-size: 14px;
+  font-size: 16px;
   text-align: right;
 }
 .event__h3 {
-  font-size: 12px;
+  font-size: 14px;
 }
 .event__left {
   grid-column: 1/2;
