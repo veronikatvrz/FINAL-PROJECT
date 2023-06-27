@@ -4,6 +4,7 @@
 
 .menu {
   background-color: colors.$c-menu;
+  padding-bottom: 10px;
 
   &__list {
     margin: 0;
@@ -62,10 +63,8 @@
     cursor: pointer;
     color: colors.$c-background;
     font-size: 20px;
-    margin-left: 10px;
     /*border: 1px solid colors.$c-background;
     border-radius: 5px;*/
-    padding: 5px 5px 0 5px;
     @media screen and (min-width: 700px) {
       display: none;
     }

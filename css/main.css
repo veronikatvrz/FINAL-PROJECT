@@ -68,17 +68,35 @@ h3 {
   width: 100%;
   background-color: #3d5a80;
   display: grid;
-  grid-template-columns: 30% 70%;
-  grid-template-rows: 100%;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto;
+}
+@media screen and (min-width: 700px) {
+  .header {
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 100%;
+  }
+}
+.header__text {
+  grid-row: 1/2;
+}
+@media screen and (min-width: 700px) {
+  .header__text {
+    grid-column: 1/2;
+    grid-row: 1;
+  }
 }
 .header__title {
-  grid-column: 2/3;
-  margin: 1em;
+  color: #fffff2;
+  margin: 0 5em;
 }
 @media screen and (min-width: 700px) {
   .header__title {
-    grid-column: 1/2;
+    margin: 1em 1em;
   }
+}
+.header__description {
+  color: #fffff2;
 }
 .header__text {
   font-family: "Amatic SC", cursive;
@@ -103,14 +121,13 @@ h3 {
   }
 }
 .header__menu {
-  grid-column: 1/2;
-  grid-row: 1;
+  grid-row: 2/3;
   align-self: center;
-  margin-right: 1em;
 }
 @media screen and (min-width: 700px) {
   .header__menu {
     grid-column: 2/3;
+    grid-row: 1;
   }
 }
 
@@ -186,6 +203,12 @@ h3 {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.hero--about {
+  background: url("../images/playroom.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .footer {
   background-color: #3d5a80;
@@ -218,6 +241,7 @@ h3 {
 
 .menu {
   background-color: #3d5a80;
+  padding-bottom: 10px;
 }
 .menu__list {
   margin: 0;
@@ -281,10 +305,8 @@ h3 {
   cursor: pointer;
   color: #fffff2;
   font-size: 20px;
-  margin-left: 10px;
   /*border: 1px solid colors.$c-background;
   border-radius: 5px;*/
-  padding: 5px 5px 0 5px;
 }
 @media screen and (min-width: 700px) {
   .menu__toggler {
