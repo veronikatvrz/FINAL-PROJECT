@@ -10,7 +10,7 @@ layout: general-template.njk
   <section class="cowork">
     <div class="cowork__grid">
       <h3 class="cowork__subheading">
-        Potřebujete pracovat, ale zároveň byste rádi zůstali na blízku svým
+        Potřebujete pracovat, ale zároveň byste rádi zůstali<br> na blízku svým
         dětem?
       </h3>
       <div class="cowork__text">
@@ -53,46 +53,27 @@ layout: general-template.njk
     </div>
     <div class="cowork__prices">
       <h2 class="cowork__heading">Ceník</h2>
-      <p>
-        1 dopoledne týdně (celkem 12 hod) - 1800Kč<br />
-        2 dopoledne týdně (celkem 24hod) - 3000 Kč
-      </p>
-
-      <p>
-        Při rezervaci na 5 měsíců nabízíme do 30. 6. 2023 akční cenu -
-        1500Kč/2500Kč
-      </p>
+      <div class="cowork__container">
+       <div class="cowork__box">
+        <div class="cowork__up"><p>1 dopoledne týdně <br>(celkem 12 hod)</p></div>
+       <div class="cowork__down"><p>1 800 Kč / měsíc</p></div>
+       </div>
+       <div class="cowork__box">      
+        <div class="cowork__up"><p>2 dopoledne týdně<br> (celkem 24 hod)</p></div>
+        <div class="cowork__down"><p>3 000 Kč / měsíc</p></div>
+      </div>
+      </div>
+    
     </div>
 
     <div class="cowork__reservation">
       <h2 class="cowork__heading">Rezervace</h2>
-      <div class="contact-us__box">
-        <div class="text contact-us__intro">
-          <p>
-            Pro rezervaci coworkingu nás prosím kontaktujte na telefonu, e-mailu
-            nebo přes Messenger.<br />
-            Rádi Vám také zodpovíme Vaše dotazy.
-          </p>
-        </div>
-        <img
-          class="icon contact-us__icon"
-          src="../icons/phone_white.png"
-          alt="telefon"
-        />
-        <p class="text contact-us__icon-text">+420 721 208 073</p>
-        <img
-          class="icon contact-us__icon"
-          src="../icons/mail_white.png"
-          alt="e-mail"
-        />
-        <p class="text contact-us__icon-text">swingingcarrots@gmail.com</p>
-        <img
-          class="icon contact-us__icon"
-          src="../icons/messenger_white.png"
-          alt="messenger"
-        />
-        <p class="text contact-us__icon-text">facebook.com/swingingcarrots/</p>
+      <div class="cowork__text">
+        <p>Chcete si rezervovat místo na coworking?</p>
       </div>
+      <button class="button cowork__button">
+        <a href="/contact" class="button__link">Kontaktujte nás</a>
+      </button>
     </div>
   </section>
 </div>

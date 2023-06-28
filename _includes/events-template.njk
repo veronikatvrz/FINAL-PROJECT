@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swinging Carrots</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Asap+Condensed:wght@400;500;600&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__title">
+        <h1 class="header__text">Swinging Carrots</h1>
+      </div>
+      <div class="header__menu">
+        {% include "partials/hamburger-menu.njk" %}
+      </div>
+    </header>
+
+    <main>
+      {{ content | safe }}
+    </main>
+
+    <!--FOOTER section-->
+    <footer class="footer">
+      <div class="footer__contact">
+        <div class="footer__left">
+          <p>
+            Swinging Carrots<br />
+            Nad kašnou 34<br />Brno - Bystrc<br />
+          </p>
+        </div>
+        <div class="footer__right">
+          <p>
+            +420 721 208 073<br />
+            swingingcarrots@gmail.com<br />
+            <a href="https://www.facebook.com/swingingcarrotsbrno"
+              ><img
+                class="icon icon__facebook"
+                src="../icons/facebook_white.png"
+                alt="facebook icon"
+            /></a>
+          </p>
+        </div>
+        <div class="footer__down">
+          <p>© Swinging Carrots 2023</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
