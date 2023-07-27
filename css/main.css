@@ -63,6 +63,9 @@ h3 {
   margin: 1em;
   max-width: 100%;
 }
+.wrapper--yoga {
+  margin: 2em;
+}
 
 .header {
   width: 100%;
@@ -415,10 +418,20 @@ h3 {
   font-family: "Amatic SC", cursive;
   text-decoration: none;
   padding: 1em;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 700;
   letter-spacing: 2px;
   color: #fffff2;
+}
+@media screen and (min-width: 650px) {
+  .button__link {
+    font-size: 28px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .button__link {
+    font-size: 34px;
+  }
 }
 .button:hover {
   background-color: #f95738;
@@ -650,6 +663,17 @@ h3 {
   margin: 2em;
 }
 
+.cowork__icon-grid {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-auto-flow: column;
+}
+.cowork__icon {
+  width: 50%;
+}
+.cowork__icon-text {
+  font-family: "Amatic SC", cursive;
+}
 .cowork__grid {
   display: grid;
   place-items: center;
@@ -686,6 +710,29 @@ h3 {
     font-size: 40px;
     padding: 1em 4em;
   }
+}
+.cowork__table {
+  margin: auto;
+  font-family: "Amatic SC", cursive;
+  border: 2px dotted #f4d35e;
+  border-radius: 5px;
+  padding: 1em;
+  background-color: white;
+  font-weight: 700;
+  font-size: 20px;
+}
+@media screen and (min-width: 750px) {
+  .cowork__table {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .cowork__table {
+    font-size: 26px;
+  }
+}
+.cowork__left {
+  padding-right: 2em;
 }
 .cowork__container {
   font-family: "Amatic SC", cursive;
@@ -724,46 +771,87 @@ h3 {
     grid-template-rows: 6/7;
   }
 }
+.cowork__button {
+  margin-bottom: 3em;
+}
 
 .regular {
   display: grid;
   place-items: center;
   grid-template-columns: 100%;
-  grid-template-rows: [intro] auto [english] auto [yoga] auto;
+  grid-template-rows: [yoga] auto [english] auto [music] auto;
   grid-gap: 1em;
   margin: 1em;
 }
 @media screen and (min-width: 650px) {
   .regular {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: [intro] auto [offer] auto;
+    grid-template-rows: 1fr 1fr;
   }
 }
-.regular__intro {
-  grid-row: intro;
+@media screen and (min-width: 1000px) {
+  .regular {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+  }
+}
+.regular__yoga {
+  grid-row: yoga;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  place-items: center;
+  margin: 1em 2em;
 }
 @media screen and (min-width: 650px) {
-  .regular__intro {
-    grid-column: 1/3;
-    align-self: center;
-    grid-row: 1/1;
+  .regular__yoga {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .regular__yoga {
+    grid-column: 1/2;
   }
 }
 .regular__english {
   grid-row: english;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: [eng-image] auto [eng-about] auto [eng-button] auto;
+  grid-template-rows: auto;
   place-items: center;
   margin: 1em 2em;
 }
-.regular__yoga {
-  grid-row: yoga;
+@media screen and (min-width: 650px) {
+  .regular__english {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .regular__english {
+    grid-column: 2/3;
+  }
+}
+.regular__music {
+  grid-row: music;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: [eng-image] auto [eng-about] auto [eng-button] auto;
+  grid-template-rows: auto;
   place-items: center;
   margin: 1em 2em;
+}
+@media screen and (min-width: 650px) {
+  .regular__music {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .regular__music {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
 }
 
 .events__grid {
@@ -876,4 +964,67 @@ h3 {
 .contact-us__icon-text {
   grid-column: 2/3;
   text-align: left;
+}
+
+.yoga__subheading {
+  font-size: 24px;
+  font-weight: 600;
+}
+.yoga__instructor {
+  margin-top: 2em;
+}
+.yoga__instructor-name {
+  font-weight: 600;
+}
+.yoga__instructor-text {
+  font-style: italic;
+}
+.yoga__instructor-image {
+  max-width: 40%;
+}
+@media screen and (min-width: 1000px) {
+  .yoga {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: auto;
+    gap: 1em;
+  }
+  .yoga__info {
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: 90% 10%;
+  }
+  .yoga__text-info {
+    margin-right: 3em;
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+  .yoga__image-container-first {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .yoga__image-container-second {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .yoga__button {
+    grid-column: 2;
+    grid-row: 2/3;
+    width: 25%;
+  }
+  .yoga__instructor {
+    display: grid;
+    grid-column: 1/3;
+    grid-template-columns: 40% 60%;
+  }
+  .yoga__instructor-name {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .yoga__instructor-text {
+    grid-column: 2/3;
+    grid-row: 2/4;
+    margin-right: 3em;
+  }
 }/*# sourceMappingURL=main.css.map */

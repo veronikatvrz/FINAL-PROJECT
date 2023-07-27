@@ -1,0 +1,76 @@
+@use "../base/fonts";
+@use "../base/basics";
+@use "../base/colors";
+
+.yoga {
+  &__subheading {
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  &__instructor {
+    margin-top: 2em;
+  }
+
+  &__instructor-name {
+    font-weight: 600;
+  }
+  &__instructor-text {
+    font-style: italic;
+  }
+
+  &__instructor-image {
+    max-width: 40%;
+  }
+
+  @media screen and (min-width: 1000px) {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: auto;
+    gap: 1em;
+
+    &__info {
+      grid-column: 1/3;
+      display: grid;
+      grid-template-columns: 35% 65%;
+      grid-template-rows: 90% 10%;
+    }
+
+    &__text-info {
+      margin-right: 3em;
+      grid-row: 1/2;
+      grid-column: 2/3;
+    }
+
+    &__image-container-first {
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
+    &__image-container-second {
+      grid-column: 1/2;
+      grid-row: 2/3;
+    }
+
+    &__button {
+      grid-column: 2;
+      grid-row: 2/3;
+      width: 25%;
+    }
+
+    &__instructor {
+      display: grid;
+      grid-column: 1/3;
+      grid-template-columns: 40% 60%;
+    }
+    &__instructor-name {
+      grid-column: 1/2;
+      grid-row: 3/4;
+    }
+
+    &__instructor-text {
+      grid-column: 2/3;
+      grid-row: 2/4;
+      margin-right: 3em;
+    }
+  }
+}
